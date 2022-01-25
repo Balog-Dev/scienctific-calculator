@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>My-Calculator-2022</title>
+</head>
+<style>
+    i{
+        color: black;
+        padding-right: 5px; 
+         font-size: 15px;
+         
+    }
+    i:hover{
+        background-color: gray;
+       
+    }
+    
+</style>
+
+<body>
+    
+
+    <section>
+<div class="container">
+    <div class="stand" style="margin-top: 20px;">
+        <div style="display: flex; justify-content: space-between;">
+            <p style="color: black; padding-left: 20px;">Calculator</p>
+              <div>
+                <i class="far fa-window-minimize" style="color: black;padding-right: 5px;  font-size: 15px;"></i>
+                <i class="far fa-window-restore" style="color: black; padding-right: 5px;  font-size: 15px;"></i>
+                <i class="fas fa-times" style="color: black; padding-right: 15px; font-size: 15px;"></i>
+              </div>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-bottom: 10px;">
+            <i class="fas fa-bars" style="padding-left: 10px; color: black;"></i>
+            <p style="padding-left: 20px; color: black;">Standard</p>
+            <i class="far fa-calendar-check" style="color: black; padding-left: 10px;"></i>
+        </div>
+
+    </div>
+     <div class="display">
+        <div class="display1"></div>
+        <div class="diplay2" id="show2"></div>
+        <div class="temp-result">0</div>
+        </div>
+    <div class="all-button">
+        <div onclick="operators('%')" class="button">%</div>
+        <div onclick="del()" class="button all-clear" id="delete">C</div>
+        <div onclick="del()" class="button all-entity-clear" id="delele">CE</div>
+        <div  onclick="del()" class="button opration11"id="delele"><<</div>
+
+        <div class="button operation">x <sup>1</sup></div>
+        <div class="button opreation">x <sup>2</sup></div>
+        <div class="button opreration">x <sup>3</sup></div>
+
+        <div onclick="operators('/')" class="button">/</div>
+        <div onclick="getnum('7')" class="button">7</div>
+        <div onclick="getnum('8')" class="button ">8</div>
+        <div onclick="getnum('9')" class="button ">9</div>
+        <div onclick="operators('*')" class="button">*</div>
+        <div onclick="getnum('4')" class="button ">4</div>
+        <div onclick="getnum('5')" class="button ">5</div>
+        <div onclick="getnum('6')" class="button ">6</div>
+        <div onclick="operators('-')" class="button">-</div>
+        <div onclick="getnum('1')" class="button ">1</div>
+        <div onclick="getnum('2')" class="button ">2</div>
+        <div onclick="getnum('3')" class="button ">3</div>
+        <div onclick="operators('+')" id="plus" class="button">+</div>
+        <div onclick="getnum('0')" class="button">0</div>
+        <div onclick="getnum('.')" class="button">.</div>
+        <button onclick="answer()" class="equal">=</button>
+    </div>
+</div>
+</div>
+    <script src="app.js"></script>
+</section>
+</body>
+</html>
